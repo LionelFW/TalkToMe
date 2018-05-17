@@ -6,7 +6,7 @@ module.exports = function (io) {
     io.on('connection', function(socket){
         socket.on('chat message', function(msg){
           console.log('message: ' + msg);
-          socket.emit('notification', { message: msg });
+          io.sockets.emit('notification', { message: msg });
         });
     });
 }
