@@ -6,19 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="/socket.io/socket.io.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" />
     <title>Wobs</title>
 </head>
 <body>
-<!-- <script>  
-        var socket = io.connect('http://localhost:3000');
-        socket.on('connect', function(data) {
-            socket.emit('join', 'Hello World from client');
-        });
-</script> -->
-    <script src="../javascripts/post.js"></script>
+    <script src="/post.js"></script>
+    <script src="/utils.js"></script>
     <form action="" id="messageForm">
         <input type="text" name="message" id="message">
         <button type="submit">Envoyer</button>
     </form>
+        <div class="two columns"></div>
+        <div class="ten columns">
+            <div class="box"><div class="row content" id="zone">
+            </div>
+        </div>    
+        <div class="two columns"></div>
 </body>
 </html>

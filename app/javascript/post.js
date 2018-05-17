@@ -15,4 +15,8 @@ $(function () {
     $('#message').val('');
     return false;
     });
+    socket.on('notification', function(msg){
+        var div = document.getElementById('zone');
+        div.innerHTML += msg.message;
+    })
 });
